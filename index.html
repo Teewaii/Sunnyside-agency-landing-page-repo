@@ -3,62 +3,128 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+<link rel="stylesheet" href="./src/app.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  About
-  Services
-  Projects
-  Contact
+  <div class="container">
+    <nav>
+      <h1 class="logo">sunnyside</h1>
+      <div class="mainNav">
+        <ul class="nav-list Nav">
+          <a href="#"><li class="nav-item">Aboutt</li></a>
+          <a href="#"><li class="nav-item">Services</li></a>
+          <a href="#"><li class="nav-item">Projects</li></a>
+          <a href="#"><li class="nav-item" id="contact">CONTACT</li></a>
+        </ul>
+      </div>
+    </nav>
 
-  We are creatives
+  <div class="main">
+    <div class="hero">
+      <h1 class="heading">We are creatives</h1>
+    </div>
+  
+  <!-- Grid-area starts here -->
 
-  Transform your brand
+  <div class="grid-area">
+      <div class="grid-1 grid">
+        <div class="text-area">
+          <h1 class="header">Transform your brand</h1>
+          <div class="body">
+            <p>We are a full-service creative agency specializing in helping brands grow fast. 
+            Engage your clients through compelling visuals that do most of the marketing for you.</p>
+            <a href="#" class="learnMore">Learn more</a></div>
+          </div>
+        <div class="img-area">
+        
+        </div>
+      </div>
+      
+      <div class="grid-2 grid">
+        <div class="text-area">
+          <h1 class="header">Stand out to the right audience</h1>
+          <div class="body">
+            <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, 
+              we’ll build and extend your brand in digital places.</p>
+            <a href="#" class="learnMore">Learn more</a></div>
+          </div>
+        <div class="img-area">
+        
+        </div>
+        </div>
+      
+      <div class="grid-3 grid">
+        <div class="img-area apple">
+          <h1 class="header">Graphic design</h1>
+          <div class="body">
+            <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+            </div>
+        </div>
+        <div class="img-area orange">
+          <h1 class="header">Photography</h1>
+          <div class="body">
+            <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+            </div>
+        </div>
+        </div>
+      </div>
 
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
+    <div class="testimony">
+      <h1 class="client-header">Client testimonials</h1>
 
-  Learn more
+      <div class="emily profile">
+        <img src="./images/image-emily.jpg" alt="">
+        <p class="client-msg">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+        <h1 class="client-name">Emily R.</h1>
+        <p class="client-position">Marketing Director</p>
+      </div>
+    
+      <div class="thomas profile">
+        <img src="./images/image-thomas.jpg" alt="">
+        <p class="client-msg">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+        <h1 class="client-name">Thomas S.</h1>
+        <p class="client-position">Chief Operating Officer</p>
+      </div>
+      
+      <div class="jennie profile">
+        <img src="./images/image-emily.jpg" alt="">
+        <p class="client-msg">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+        <h1 class="client-name">Jennie F.</h1>
+        <p class="client-position">Business Owner</p>
+      </div>
 
-  Stand out to the right audience
+    </div>
+<div class="gallery">
+  <div class="gallery-img img1"></div>
+  <div class="gallery-img img2"></div>
+  <div class="gallery-img img3"></div>
+  <div class="gallery-img img4"></div>
+</div>
+</div>
 
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+<div class="footer">
+  <h1 class="footer-header">sunnyside</h1>
+  <ul class="footerNav Nav">
+    <a href="#"><li class="nav-item"> About </li></a>
+    <a href="#"><li class="nav-item"> Services</li></a>
+    <a href="#"><li class="nav-item"> Projects</li></a>
+  </ul>
 
-  Learn more
+  <ul class="social Nav">
+    <a href="#"><li class="nav-item facebook">fb</li></a>
+    <a href="#"><li class="nav-item insta">Insta</li></a>
+    <a href="#"><li class="nav-item twitter">twit</li></a>
+    <a href="#"><li class="nav-item pinterest">Pint</li></a>
+  </ul>
 
-  Graphic design
-  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+</div>
 
-  Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+</div>
 
-  Client testimonials
-
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-  Emily R.
-  Marketing Director
-
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-  Thomas S.
-  Chief Operating Officer
-
-  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-  Jennie F.
-  Business Owner
-
-  About
-  Services
-  Projects
-  Contact
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
