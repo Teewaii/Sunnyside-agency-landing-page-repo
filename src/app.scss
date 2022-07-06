@@ -6,7 +6,97 @@
     box-sizing: border-box;    
 }
 
+$SoftRed: hsl(7, 99%, 70%);
+$Yellow: hsl(51, 100%, 49%);
+$DarkDesaturatedCyan_graphic_design_text: hsl(167, 40%, 24%);
+$DarkBlue_photography_text: hsl(198, 62%, 26%);
+$DarkModerateCyan_footer: hsl(168, 34%, 41%);
+
+$VeryDarkDesaturatedBlue: hsl(212, 27%, 19%);
+$VeryDarkGrayishBlue: hsl(213, 9%, 39%);
+$DarkGrayishBlue: hsl(232, 10%, 55%);
+$GrayishBlue: hsl(210, 4%, 67%);
+$White: hsl(0, 0%, 100%);
+
+
 body{
     font-family: 'Fraunces', serif;
+    font-family: 'Barlow', sans-serif;
+}
+
+h1{
+    font-family: 'Fraunces', serif;
+}
+p{
+    font-family: 'Barlow', sans-serif;
+}
+.mainNav{
+    display: none;
+}
+
+.container{
+    // min-width: 375px;
+    // min-width: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10 auto);
+    grid-area: 
+        "header"    
+        "transform"    
+        "trans"    
+        "stand-out"    
+        "stand"    
+        "apple"    
+        "orange"    
+        "testimony"    
+        "gallery"    
+        "footer"    
+    ;
+}
+
+.main{
+    
+.main-header{
+    grid-area: header;
+   height:100vh;
+   min-width: 375px;
+   background-image: url(../images/mobile/image-header.jpg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+    nav{
+
+        .logo h1{
+            font-size: 2.5rem;
+            font-family: 'Barlow', sans-serif;
+            border: 1px solid red;
+            display: flex;
+        }
+    
+    .hamburger{
+        border: 1px solid yellow;
+    }
 
 }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }

@@ -7,4 +7,56 @@
 
 body {
   font-family: "Fraunces", serif;
+  font-family: "Barlow", sans-serif;
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+}
+
+p {
+  font-family: "Barlow", sans-serif;
+}
+
+.mainNav {
+  display: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(10 auto);
+  grid-area: "header" "transform" "trans" "stand-out" "stand" "apple" "orange" "testimony" "gallery" "footer";
+}
+
+.main .main-header {
+  grid-area: header;
+  height: 100vh;
+  min-width: 375px;
+  background-image: url(../images/mobile/image-header.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.main nav .logo h1 {
+  font-size: 2.5rem;
+  font-family: "Barlow", sans-serif;
+  border: 1px solid red;
+  display: flex;
+}
+.main nav .hamburger {
+  border: 1px solid yellow;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
 }/*# sourceMappingURL=app.css.map */

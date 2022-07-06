@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-<link rel="stylesheet" href="./src/app.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./src/app.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Sunnyside agency landing page</title>
@@ -11,8 +12,12 @@
 </head>
 <body>
   <div class="container">
+   
+  <div class="main">  
+
+    <div class="main-header">
     <nav>
-      <h1 class="logo">sunnyside</h1>
+      <div class="logo"><h1>sunnyside</h1></div>
       <div class="mainNav">
         <ul class="nav-list Nav">
           <a href="#"><li class="nav-item">Aboutt</li></a>
@@ -20,59 +25,52 @@
           <a href="#"><li class="nav-item">Projects</li></a>
           <a href="#"><li class="nav-item" id="contact">CONTACT</li></a>
         </ul>
+        <div class="hamburger">
+          <span><i class="fa-solid fa-bars"></i></span>
+          
+        </div>
       </div>
     </nav>
-
-  <div class="main">
-    <div class="hero">
       <h1 class="heading">We are creatives</h1>
     </div>
   
   <!-- Grid-area starts here -->
 
-  <div class="grid-area">
-      <div class="grid-1 grid">
-        <div class="text-area">
+      <div class="transform text-area">
           <h1 class="header">Transform your brand</h1>
           <div class="body">
             <p>We are a full-service creative agency specializing in helping brands grow fast. 
             Engage your clients through compelling visuals that do most of the marketing for you.</p>
             <a href="#" class="learnMore">Learn more</a></div>
           </div>
-        <div class="img-area">
+        <div class="trans img-area">
         
         </div>
-      </div>
-      
-      <div class="grid-2 grid">
-        <div class="text-area">
+            
+      <div class="stand-out text-area">
           <h1 class="header">Stand out to the right audience</h1>
           <div class="body">
             <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, 
               we’ll build and extend your brand in digital places.</p>
             <a href="#" class="learnMore">Learn more</a></div>
           </div>
-        <div class="img-area">
+        <div class="stand img-area">
         
         </div>
-        </div>
-      
-      <div class="grid-3 grid">
-        <div class="img-area apple">
+        
+      <div class="apple img-area">
           <h1 class="header">Graphic design</h1>
           <div class="body">
             <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
             </div>
         </div>
-        <div class="img-area orange">
+        <div class="orange img-area">
           <h1 class="header">Photography</h1>
           <div class="body">
             <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
             </div>
         </div>
-        </div>
-      </div>
-
+     
     <div class="testimony">
       <h1 class="client-header">Client testimonials</h1>
 
@@ -91,7 +89,7 @@
       </div>
       
       <div class="jennie profile">
-        <img src="./images/image-emily.jpg" alt="">
+        <img src="./images/image-jennie.jpg" alt="">
         <p class="client-msg">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
         <h1 class="client-name">Jennie F.</h1>
         <p class="client-position">Business Owner</p>
