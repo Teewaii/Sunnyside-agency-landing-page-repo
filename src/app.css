@@ -18,6 +18,14 @@ p {
   font-family: "Barlow", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  color: hsl(212deg, 27%, 19%);
+  font-size: 1.2rem;
+}
+
 .mainNav {
   display: none;
 }
@@ -26,12 +34,12 @@ p {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(10 auto);
-  grid-area: "header" "transform" "trans" "stand-out" "stand" "apple" "orange" "testimony" "gallery" "footer";
+  grid-template-areas: "header" "transform" "trans" "stand" "stand-out" "apple" "orange" "testimony" "gallery" "footer";
 }
 
 .main .main-header {
   grid-area: header;
-  height: 100vh;
+  height: 95vh;
   min-width: 375px;
   background-image: url(../images/mobile/image-header.jpg);
   background-position: center;
@@ -41,22 +49,265 @@ p {
   padding: 30px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-.main nav .logo h1 {
-  font-size: 2.5rem;
+.main nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 110px;
+}
+.main .logo h1 {
+  font-size: 1.5rem;
   font-family: "Barlow", sans-serif;
-  border: 1px solid red;
+}
+.main .hamburger {
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+.main .heading {
+  font-size: 3.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 50px;
+}
+.main .arrow {
+  background-image: url(../images/icon-arrow-down.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 3rem;
+  height: 120px;
+  width: 100px;
+}
+.main .card {
+  padding: 54px;
+  text-align: center;
+}
+.main .card h1 {
+  font-size: 2.3rem;
+  width: 300px;
+  margin: auto;
+  margin-bottom: 20px;
+  color: hsl(212deg, 27%, 19%);
+}
+.main .card p {
+  font-size: 1.2rem;
+  color: hsl(210deg, 4%, 67%);
+  line-height: 1.9rem;
+  margin-bottom: 20px;
+}
+.main .trans {
+  grid-area: trans;
+  background-image: url(../images/mobile/image-transform.jpg);
+  background-position: top;
+  background-size: cover;
+  height: 60vh;
+}
+.main .transform {
+  grid-area: transform;
+  background-position: top;
+  background-size: cover;
+  height: 65vh;
+}
+.main .transform .learnMore {
+  position: relative;
+}
+.main .transform .learnMore::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(250, 212, 0, 0.4);
+  height: 10px;
+  border-radius: 10px;
+  width: 100%;
+  top: 16px;
+  z-index: -5;
+}
+.main .stand {
+  grid-area: transform;
+  background-position: top;
+  background-size: cover;
+  grid-area: trans;
+  background-image: url(../images/mobile/image-stand-out.jpg);
+  background-position: top;
+  background-size: cover;
+  height: 60vh;
+}
+.main .stand-out {
+  grid-area: transform;
+  background-position: top;
+  background-size: cover;
+  height: 65vh;
+}
+.main .stand-out .learnMore {
+  position: relative;
+}
+.main .stand-out .learnMore::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(254, 120, 103, 0.4);
+  height: 10px;
+  border-radius: 10px;
+  width: 100%;
+  top: 16px;
+  z-index: -5;
+}
+.main .apple {
+  grid-area: apple;
+  background-position: top;
+  background-size: cover;
+  grid-area: trans;
+  background-image: url(../images/mobile/image-graphic-design.jpg);
+  background-position: top;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+.main .apple .body {
+  position: absolute;
+  padding: 20px 50px;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.main .apple .body h1,
+.main .apple .body p {
+  color: hsl(167deg, 40%, 24%);
+}
+.main .orange {
+  grid-area: orange;
+  background-position: top;
+  background-size: cover;
+  grid-area: trans;
+  background-image: url(../images/mobile/image-photography.jpg);
+  background-position: top;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+.main .orange .body {
+  position: absolute;
+  padding: 20px 50px;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.main .orange .body h1,
+.main .orange .body p {
+  color: hsl(198deg, 62%, 26%);
+}
+.main .testimony {
+  grid-area: testimony;
+}
+.main .testimony .profile {
+  margin-bottom: 50px;
+}
+.main .testimony .client-header {
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: hsl(210deg, 4%, 67%);
+  margin-bottom: 60px;
+}
+.main .testimony .headshot {
+  border-radius: 50%;
+  width: 80px;
+  margin-bottom: 30px;
+}
+.main .testimony p {
+  color: hsl(213deg, 9%, 39%);
+}
+.main .testimony .client-name {
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+}
+.main .testimony .client-position {
+  font-size: 0.8rem;
+  color: hsl(210deg, 4%, 67%);
+}
+.main .gallery {
+  grid-area: gallery;
+  display: grid;
+  grid-template-columns: repeat(2 auto);
+  height: 65vh;
+  grid-template-areas: "img1 img2" "img3 img4";
+}
+.main .img1 {
+  grid-area: img1;
+  background-image: url(../images/mobile/image-gallery-milkbottles.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main .img2 {
+  grid-area: img2;
+  background-image: url(../images/mobile/image-gallery-orange.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main .img3 {
+  grid-area: img3;
+  background-image: url(../images/mobile/image-gallery-cone.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main .img4 {
+  grid-area: img4;
+  background-image: url(../images/mobile/image-gallery-sugar-cubes.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main .footer {
+  grid-area: footer;
+  background-color: rgb(151, 231, 215);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 110px 0px;
+  text-align: center;
+}
+.main .footer .footer-header {
+  color: hsl(167deg, 40%, 24%);
+  font-family: "Barlow", sans-serif;
+  font-weight: 800;
+}
+.main .footer .footerNav {
+  list-style: none;
+  display: flex;
+  margin-bottom: 80px;
+}
+.main .footer li {
+  color: rgba(69, 140, 126, 0.85);
+  text-transform: capitalize;
+  font-family: "Barlow", sans-serif;
+}
+.main .footer li:nth-child(1) {
+  margin: 20px 40px;
+}
+.main .footer .social {
   display: flex;
 }
-.main nav .hamburger {
-  border: 1px solid yellow;
+.main .footer .social li {
+  list-style: none;
+  margin: 20px;
 }
 
 .attribution {
+  padding: 15px;
   font-size: 11px;
   text-align: center;
 }
 
 .attribution a {
   color: hsl(228deg, 45%, 44%);
+  font-size: 0.7rem;
+  text-transform: capitalize;
 }/*# sourceMappingURL=app.css.map */
