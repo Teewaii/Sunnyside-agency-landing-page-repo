@@ -43,646 +43,140 @@ a {
     font-size: 1.2rem;
 }
 
-.mainNav {
+.hamburger {
     display: none;
 }
 
 .container {
-    // min-width: 375px;
-    // min-width: 100vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(10 auto);
-    grid-template-areas:
-        "header"
-        "transform"
-        "trans"
-        "stand"
-        "stand-out"
-        "apple"
-        "orange"
-        "testimony"
-        "gallery"
-        "footer"
-    ;
-}
-
-.main {
-
-    .main-header {
-        grid-area: header;
-        height: 95vh;
-        min-width: 375px;
-        background-image: url(../images/mobile/image-header.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        color: white;
-        padding: 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        margin-bottom: 110px;
-    }
-
-    .logo h1 {
-        font-size: 1.5rem;
-        font-family: 'Barlow', sans-serif;
-    }
-
-    .hamburger {
-        font-size: 1.6rem;
-        cursor: pointer;
-    }
-
-    .heading {
-        font-size: 3.5rem;
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 4px;
-        margin-bottom: 50px;
-    }
-
-    .arrow {
-        background-image: url(../images/icon-arrow-down.svg);
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        font-size: 3rem;
-        height: 120px;
-        width: 100px;
-    }
-
-    .card {
-        padding: 54px;
-        text-align: center;
-        h1 {
-            font-size: 2.3rem;
-            width: 300px;
-            margin: auto;
-            margin-bottom: 20px;
-            color: $VeryDarkDesaturatedBlue;  
-        }
-
-        p {
-            font-size: 1.2rem;
-            color: $GrayishBlue;
-            line-height: 1.9rem;
-            margin-bottom: 20px;
-        }
-
-    }
-
-    
-    .trans {
-        grid-area: trans;
-        background-image: url(../images/mobile/image-transform.jpg);
-        background-position: top;
-        background-size: cover;
-        height: 60vh;
-    }
-
-    .transform {
-        grid-area: transform;
-        background-position: top;
-        background-size: cover;
-        height: 65vh;
-
-        .learnMore {
-            position: relative;
-        }
-
-        .learnMore::before {
-            content: "";
-            position: absolute;
-            background-color: rgba(250, 212, 0, .4);
-            height: 10px;
-            border-radius: 10px;
-            width: 100%;
-            top: 16px;
-            z-index: -5;
-        }
-    }
-
-    .stand {
-        grid-area: transform;
-        background-position: top;
-        background-size: cover;
-        grid-area: trans;
-        background-image: url(../images/mobile/image-stand-out.jpg);
-        background-position: top;
-        background-size: cover;
-        height: 60vh;
-
-    }
-
-    .stand-out {
-        grid-area: transform;
-        background-position: top;
-        background-size: cover;
-        height: 65vh;
-
-        .learnMore {
-            position: relative;
-        }
-
-        .learnMore::before {
-            content: "";
-            position: absolute;
-            background-color: rgba(254, 120, 103, .4);
-            height: 10px;
-            border-radius: 10px;
-            width: 100%;
-            top: 16px;
-            z-index: -5;
-        }
-    }
-
-    .apple {
-        grid-area: apple;
-        background-position: top;
-        background-size: cover;
-        grid-area: trans;
-        background-image: url(../images/mobile/image-graphic-design.jpg);
-        background-position: top;
-        background-size: cover;
-        height: 100vh;
-        position: relative;
-
-        .body {
-            position: absolute;
-            padding: 20px 50px;
-            bottom: 0px;
-            left: 0;
-            right: 0;
-            margin: auto;
-
-            h1,
-            p {
-                color: $DarkDesaturatedCyan_graphic_design_text;
-
-            }
-        }
-
-    }
-
-    .orange {
-        grid-area: orange;
-        background-position: top;
-        background-size: cover;
-        grid-area: trans;
-        background-image: url(../images/mobile/image-photography.jpg);
-        background-position: top;
-        background-size: cover;
-        height: 100vh;
-        position: relative;
-
-        .body {
-            position: absolute;
-            padding: 20px 50px;
-            bottom: 0px;
-            left: 0;
-            right: 0;
-            margin: auto;
-
-            h1,
-            p {
-                color: $DarkBlue_photography_text;
-            }
-        }
-    }
-
-    .testimony {
-        grid-area: testimony;
-
-        .profile {
-            margin-bottom: 50px;
-        }
-
-        .client-header {
-            font-size: 1.1rem;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            color: $GrayishBlue;
-            margin-bottom: 60px;
-        }
-
-        .headshot {
-            border-radius: 50%;
-            width: 80px;
-            margin-bottom: 30px;
-        }
-
-        p {
-            color: $VeryDarkGrayishBlue;
-        }
-
-        .client-name {
-            font-size: 1.2rem;
-            margin-bottom: 4px;
-        }
-
-        .client-position {
-            font-size: .8rem;
-            color: $GrayishBlue;
-        }
-    }
-
-    .gallery {
-        grid-area: gallery;
+    .main {
         display: grid;
-        grid-template-columns: repeat(2 auto);
-        height: 65vh;
+        grid-template-columns: repeat(2, minmax(1fr, auto));
+        grid-template-rows: repeat(7, minmax(500px, auto));
         grid-template-areas:
-            "img1 img2"
-            "img3 img4"
+            "header header"
+            "transform trans"
+            "stand standout"
+            "graphic photography"
+            "testimony testimony"
+            "gallery gallery"
+            "footer footer"
         ;
     }
 
-    .img1 {
-        grid-area: img1;
-        background-image: url(../images/mobile/image-gallery-milkbottles.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    .img2 {
-        grid-area: img2;
-        background-image: url(../images/mobile/image-gallery-orange.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    .img3 {
-        grid-area: img3;
-        background-image: url(../images/mobile/image-gallery-cone.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    .img4 {
-        grid-area: img4;
-        background-image: url(../images/mobile/image-gallery-sugar-cubes.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    .footer {
-        grid-area: footer;
-        background-color: rgb(151, 231, 215);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        padding: 110px 0px;
-        text-align: center;
-
-
-        .footer-header {
-            color: $DarkDesaturatedCyan_graphic_design_text;
-            font-family: 'Barlow', sans-serif;
-            font-weight: 800;
-            // margin-bottom: 40px;
-        }
-
-        .footerNav {
-            list-style: none;
-            display: flex;
-            margin-bottom: 80px;
-        }
-
-        li {
-            color: rgba(69, 140, 126, 0.85);
-            text-transform: capitalize;
-            font-family: 'Barlow', sans-serif;
-        }
-        li:hover {
-            color: white;
-        }
-
-        li:nth-child(1) {
-            margin: 20px 40px;
-        }
-
-        .social {
-            display: flex;
-        
-            li {
-                list-style: none;
-                margin: 20px;
-            }
-
-        .social-item {
-            color: $DarkDesaturatedCyan_graphic_design_text;
-            font-size: 1.5rem;
-            }
-        .social-item:hover {
-            color: white;
-            }
-
-        }
-    }
-
-}
-
-.attribution {
-    padding: 15px;
-    font-size: 11px;
-    text-align: center;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
-    font-size: .7rem;
-    text-transform: capitalize;
-}
-
-
-// Large Screen
-
-
-@media (min-width:800px) {
-
-    
-.mainNav {
-    display: flex;
-}
-
-.container{
-    max-width: 375px;
-.main {
-    // min-width: 375px;
-    // overflow: hidden;
-    display: grid;
-    grid-template-columns:1fr 1fr;
-    grid-template-rows: repeat(7 auto);
-    grid-template-areas:
-        "header header"
-        "transform trans"
-        "stand stand-out"
-        "apple orange"
-        "testimony testimony "
-        "gallery gallery"
-        "footer footer"
-    ;
-    
     .main-header {
         grid-area: header;
-        height: 95vh;
-        width: 100vw;
         background-image: url(../images/desktop/image-header.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        color: white;
-        padding: 30px;
+        height: 90vh;
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
 
-    nav {
-        display: flex;
-        // border: 1px solid red;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .mainNav{
-        ul{
+        nav {
             display: flex;
-            
-        }
-        li{
-            list-style: none;
-            margin-right: 15px;
-            font-size: .9rem;
-            font-family: $bodyFont;
-            text-transform: capitalize;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px;
             color: white;
-            letter-spacing: .5px;
-            padding: 10px 15px; 
+            width: 100%;
+            margin-bottom: 80px;
         }
 
-         .active{
+        .logo h1 {
+            font-family: $bodyFont;
+        }
+
+        ul {
+            display: flex;
             list-style: none;
+            align-items: center;
+        }
+
+        li {
             margin-right: 20px;
             font-size: .9rem;
-            font-family: $headerFont;
-            text-transform: capitalize;           
-            color: $VeryDarkDesaturatedBlue;
+            font-family: $bodyFont;
+            color: white;
+            text-transform: capitalize;
+        }
+
+        .active {
             background-color: white;
-            border-radius: 18px;
+            color: $VeryDarkGrayishBlue;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-family: $headerFont;
+            font-size: .7rem;
         }
-    }
-    
-    .logo h1 {
-        font-size: 1.2rem;
-        font-family: 'Barlow', sans-serif;
+
+        .heading {
+            color: white;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 40px;
+        }
+
+        .arrow {
+            background-image: url(../images/icon-arrow-down.svg);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-size: 3rem;
+            height: 95px;
+            width: 60px;
+        }
+
+
     }
 
-    .hamburger {display: none;
-    }
+}
 
-    .heading {
-        font-size: 3.5rem;
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 4px;
-        margin-bottom: 100px;
-    }
+.transform {
+    grid-area: transform;
+}
 
-    .arrow {
-        background-image: url(../images/icon-arrow-down.svg);
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        font-size: 3rem;
-        height: 150px;
-        width: 100px;
-    }
+.trans {
+    grid-area: trans;
+    border: 1px solid blue;
+}
 
-.card {
+.stand {
+    grid-area: stand;
+    border: 1px solid green;
+}
+
+.stand-out {
+    grid-area: standout;
+    border: 1px solid blue;
+}
+
+.apple {
+    grid-area: graphic;
+    border: 1px solid green;
+}
+
+.orange {
+    grid-area: photography;
+    border: 1px solid blue;
+}
+
+.testimony {
+    grid-area: testimony;
     border: 1px solid red;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    align-content: flex-end;
-    padding: 100px 180px;
-      
-        h1 {
-            font-size: 2.3rem;
-            width: 300px;
-            margin: 0;
-            color: $VeryDarkDesaturatedBlue;
-            margin-bottom: 30px;
-        }
-
-        p {
-            font-size: 1.2rem;
-            color: $GrayishBlue;
-            line-height: 1.9rem;
-            margin-bottom: 20px;
-            max-width: 80%;
-        }
-    }
-
-    .trans {
-        grid-area: trans;
-        background-image: url(../images/desktop/image-transform.jpg);
-        background-position: top;
-        background-size: cover;
-        height: 50vh;
-    }
-
-    .transform {
-        grid-area: transform;
-        background-position: top;
-        background-size: cover;
-        height: 50vh;
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        align-items: center;
-        justify-content: center;
-        
-        .learnMore {
-            position: relative;
-        }
-
-        .header{
-            align-items: flex-start;
-        }
-        .learnMore::before {
-            content: "";
-            position: absolute;
-            background-color: rgba(250, 212, 0, .4);
-            height: 10px;
-            border-radius: 10px;
-            width: 100%;
-            top: 16px;
-            z-index: -5;
-        }
-    }
-
-    .stand {
-       background-position: top;
-        background-size: cover;
-        grid-area: stand;
-        background-image: url(../images/desktop/image-stand-out.jpg);
-        background-position: top;
-        background-size: cover;
-        height: 50vh;
-    }
-
-    .stand-out {
-        grid-area: stand-out;
-        background-position: top;
-        background-size: cover;
-        height: 50vh;
-        }
-        
-    .apple {
-        grid-area: apple;
-        background-position: top;
-        background-size: cover;
-        background-image: url(../images/desktop/image-graphic-design.jpg);
-        background-position: top;
-        background-size: cover;
-        height: 50vh;
-        position: relative;
-    }
-
-    .orange {
-        grid-area: orange;
-        background-position: top;
-        background-size: cover;
-        background-image: url(../images/desktop/image-photography.jpg);
-        background-position: top;
-        background-size: cover;
-        height: 50vh;
-        position: relative;
-    }
-
-    .testimony {
-        grid-area: testimony;
-        display: grid;
-        height: 70vh;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-areas: 
-        "client-header client-header client-header"
-        ;
-.client-header{
-    grid-area: client-header;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, auto));
+    grid-template-rows: 100px auto;
+    grid-template-areas:
+        "client-testimony client-testimony client-testimony "
+        "client client client";
 }
+
+.testimony {
+    .client-header {
+        grid-area: client-testimony;
     }
 
-    .gallery {
-        grid-area: gallery;
-        display: grid;
-        grid-template-columns: repeat(2 auto);
-        height: 40vh;
-        grid-template-areas:
-            "img1 img2 img3 img4"
-        ;
-
-    .img1 {
-        grid-area: img1;
-        background-image: url(../images/desktop/image-gallery-milkbottles.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    .img2 {
-        grid-area: img2;
-        background-image: url(../images/desktop/image-gallery-orange.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    .img3 {
-        grid-area: img3;
-        background-image: url(../images/desktop/image-gallery-cone.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    .img4 {
-        grid-area: img4;
-        background-image: url(../images/desktop/image-gallery-sugarcubes.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-}
-.footer {
-    grid-area: footer;
-    background-color: rgb(151, 231, 215);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 70px 0px;
-    text-align: center;
-    height: 60vh;
-}
-    
-
-}
-}
 }
