@@ -578,12 +578,12 @@ a {
 
     .stand {
        background-position: top;
-        background-size: cover;
-        grid-area: stand;
-        background-image: url(../images/desktop/image-stand-out.jpg);
-        background-position: top;
-        background-size: cover;
-        height: 50vh;
+       background-size: cover;
+       grid-area: stand;
+       background-image: url(../images/desktop/image-stand-out.jpg);
+       background-position: top;
+       background-size: cover;
+       height: 50vh;
     }
 
     .stand-out {
