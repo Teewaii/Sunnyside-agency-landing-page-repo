@@ -1,9 +1,9 @@
 
 const hamburger = document.querySelector('.hamburger');
-const header = document.querySelector('.heading');
+const activate = document.querySelector('.mainNav');
 
 hamburger.addEventListener('click', togu)
 
 function togu() {
-    man
+    activate.classList.toggle('activate')
 }
