@@ -530,9 +530,14 @@ li {
        
     }
 
+    .logo{
+        font-size: 1.5rem;
+    }
+
     .heading {
-        /* margin-bottom: 130px; */
+        margin-bottom: 130px;
         text-align: center;
+        font-size: 4rem;
         max-width: 100%;
     }
 
@@ -770,7 +775,7 @@ li {
 
 }
 
-@media (max-width:1280px) {
+/* @media (max-width:1280px) {
     .arrow {
         bottom: 280px;
         font-size: 3rem;
@@ -791,4 +796,4 @@ li {
         width: 60px;
     }
     
-}
+} */
