@@ -552,7 +552,7 @@ li {
         text-align: left;
         width: 450px;
         margin: auto;
-        transform: scale(0.8);
+        /* transform: scale(0.8); */
         align-items: flex-start;
     }
 
