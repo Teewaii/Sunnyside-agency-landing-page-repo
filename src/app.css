@@ -63,6 +63,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 nav {
@@ -84,7 +85,7 @@ nav {
     font-size: 4rem;
     text-transform: uppercase;
     letter-spacing: 5px;
-    margin-bottom: 150px;
+    /* margin-bottom: 150px; */
     text-align: center;
     max-width: 600px;
 }
@@ -97,6 +98,8 @@ nav {
     font-size: 3rem;
     height: 180px;
     width: 60px;
+    position: absolute;
+    bottom: 250px;
 }
 
 .hamburger {
@@ -528,13 +531,13 @@ li {
     }
 
     .heading {
-        margin-bottom: 130px;
+        /* margin-bottom: 130px; */
         text-align: center;
         max-width: 100%;
     }
 
     .arrow {
-
+        bottom: 350px;
         font-size: 3rem;
         height: 110px;
         width: 60px;
@@ -767,10 +770,25 @@ li {
 
 }
 
-/* @media (max-width:2000px) {
-    .heading{
-
-        color: red;
+@media (max-width:1280px) {
+    .arrow {
+        bottom: 280px;
+        font-size: 3rem;
+        height: 110px;
+        width: 60px;
     }
     
-} */
+}
+
+@media (width:1024px) {
+    nav{
+        margin-bottom: 30px;
+    }
+    .arrow {
+        bottom: 210px;
+        font-size: 3rem;
+        height: 110px;
+        width: 60px;
+    }
+    
+}
