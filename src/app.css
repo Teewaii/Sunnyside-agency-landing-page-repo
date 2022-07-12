@@ -158,7 +158,7 @@ nav {
     font-size: 1.1rem;
     line-height: 1.5rem;
     font-weight: normal;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
     width: 370px;
 }
 
@@ -586,9 +586,9 @@ li {
         font-size: 1.1rem;
         line-height: 1.5rem;
         font-weight: normal;
-        margin-bottom: 40px;
+        margin-bottom: 110px;
         width: 370px;
-        transform: scale(.8);
+        /* transform: scale(.8); */
     }
 
 
