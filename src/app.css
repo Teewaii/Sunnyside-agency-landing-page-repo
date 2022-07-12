@@ -505,7 +505,7 @@ li {
 
     nav li {
         margin-right: 20px;
-        font-size: .9rem;
+        font-size: 1.15rem;
         font-family: var(--bodyFont);
         color: white;
         text-transform: capitalize;
