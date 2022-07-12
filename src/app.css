@@ -73,7 +73,7 @@ nav {
     padding: 10px 20px;
     color: white;
     width: 100%;
-    margin-bottom: 110px;
+    margin-bottom: 90px;
 }
 
 .logo h1 {
@@ -85,7 +85,7 @@ nav {
     font-size: 4rem;
     text-transform: uppercase;
     letter-spacing: 5px;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
     text-align: center;
     max-width: 600px;
 }
@@ -96,7 +96,7 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     font-size: 3rem;
-    height: 160px;
+    height: 120px;
     width: 60px;
     /* position: absolute;
     bottom: 250px; */
@@ -158,7 +158,7 @@ nav {
     font-size: 1.1rem;
     line-height: 1.5rem;
     font-weight: normal;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     width: 370px;
 }
 
@@ -420,7 +420,7 @@ li {
 
 
 @media (max-width:900px) {
-    .mainNav{
+    .mainNav {
         display: none;
     }
 
@@ -471,21 +471,22 @@ li {
         font-family: var(--headerFont);
         font-size: .7rem;
     }
+
     .mainNav .active:hover {
-        background-color:rgba(250, 212, 0,.5);
+        background-color: rgba(250, 212, 0, .5);
         color: black;
-       
+
     }
 }
 
-.activate{
+.activate {
     display: flex;
 }
 
 @media (min-width:900px) {
     .hamburger {
         display: none;
-        
+
     }
 
     nav {
@@ -494,7 +495,7 @@ li {
         padding: 10px 40px;
         color: white;
         width: 100%;
-        margin-bottom: 100px;
+        margin-bottom: 80px;
     }
 
     nav ul {
@@ -505,7 +506,7 @@ li {
 
     nav li {
         margin-right: 20px;
-        font-size: 1.15rem;
+        font-size: 1.1rem;
         font-family: var(--bodyFont);
         color: white;
         text-transform: capitalize;
@@ -524,14 +525,15 @@ li {
         font-family: var(--headerFont);
         font-size: .7rem;
     }
+
     .active:hover {
-        background-color: rgba(255, 255, 255,.4);
+        background-color: rgba(255, 255, 255, .4);
         color: var(--VeryDarkGrayishBlue);
-       
+
     }
 
-    .logo{
-        font-size: 1.5rem;
+    .logo {
+        font-size: 1.2rem;
     }
 
     .heading {
@@ -611,10 +613,10 @@ li {
 
     .main-header {
         background-image: url(../images/desktop/image-header.jpg);
-        background-position: bottom;
+        background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 93vh;
+        height: 98vh;
         display: flex;
         flex-direction: column;
         align-items: center;
