@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;700;900&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+
 
 * {
     margin: 0;
@@ -24,8 +26,8 @@
 
 
 body {
-    font-family: 'Fraunces', serif;
     font-family: 'Barlow', sans-serif;
+   font-family: 'Fraunces', serif;
 
 }
 
@@ -82,12 +84,14 @@ nav {
 
 .heading {
     color: white;
-    font-size: 4rem;
+    font-size: 3rem;
     text-transform: uppercase;
     letter-spacing: 5px;
     margin-bottom: 50px;
     text-align: center;
     max-width: 600px;
+    font-weight: 700;
+    
 }
 
 .arrow {
@@ -777,25 +781,95 @@ li {
 
 }
 
-/* @media (max-width:1280px) {
-    .arrow {
-        bottom: 280px;
-        font-size: 3rem;
-        height: 110px;
-        width: 60px;
+ @media (min-width:390px) and (max-width:414px) {
+    nav{
+        margin-bottom:  150px;
     }
-    
+    .heading{
+        margin-bottom:  100px;
+    }
 }
 
-@media (width:1024px) {
+    @media  (width:820px) {
     nav{
-        margin-bottom: 30px;
+        margin-bottom:  150px;
     }
+
+    .heading{
+        font-size: 6rem;
+        margin-bottom:  180px;
+    }
+
     .arrow {
-        bottom: 210px;
-        font-size: 3rem;
-        height: 110px;
+        font-size: 9rem;
+        height: 180px;
         width: 60px;
     }
+}
+
+    @media  (width:768px) {
+    nav{
+        margin-bottom:  150px;
+    }
+    .heading{
+        font-size: 6rem;
+        margin-bottom:  90px;
+    }
+    .arrow {
+        font-size: 9rem;
+        height: 180px;
+        width: 60px;
+    }
+}
+
+    @media (width:540px)  {
+    nav{
+        margin-bottom:  100px;
+    }
     
-} */
+    .heading{
+        margin-bottom:  90px;
+    }
+}
+
+    @media (width:412px)  {
+    nav{
+        margin-bottom:  180px;
+    }
+    .heading{
+        
+        margin-bottom:  150px;
+    }
+}
+    @media (width:1280px)   {
+    nav{
+        margin-bottom:  100px;
+    }
+    .heading{
+        margin-bottom:  90px;
+    }
+}
+    @media (width:1024px)   {
+    nav{
+        margin-bottom:  70px;
+    }
+    .heading{
+        margin-bottom:  40px;
+        font-size: 3rem;
+    }
+}
+    @media (min-width:1800px)   {
+    nav{
+        margin-bottom:  150px;
+    }
+    .heading{
+        font-size: 4rem;
+        margin-bottom:  130px;
+    }
+    .arrow {
+        font-size: 8rem;
+        height: 130px;
+        width: 60px;
+    }
+}
+
